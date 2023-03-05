@@ -1,0 +1,52 @@
+body {
+	background-image:url(image/fon.jpg);
+    color: #000000;
+    font: 1em/1.4 Arial, sans-serif;
+}
+h1, h2, h3 {
+	font-family: Georgia, Times, serif;
+	text-align:center;
+}
+ul {
+	list-style-type:square;
+}
+img {
+	margin: 5px;
+}
+code {
+	font: bolder 1em/1.4 "Courier New", Courier, monospace;
+}
+a {
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: #ba1000;
+	text-decoration: underline;
+}
+
+.example {
+	font: 14px "Courier New", Courier, monospace;
+}
+.attribute, .property {
+	color:#e6550d;
+	white-space: nowrap;
+}
+.at-rule {
+	color:#e6550d;
+}
+.value {
+	color: #31a354;
+}
+.element {
+	color: navy;
+}
+code.element::before {
+	content: "<";
+}
+code.element::after {
+	content: ">";
+}
+.center{
+	max-width: 1200px;
+	margin: 0 auto;
+}
