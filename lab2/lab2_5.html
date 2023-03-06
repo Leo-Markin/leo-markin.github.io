@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Форма</title>
+</head>
+<body>
+<h1>Форма регистрации пользователя</h1>
+<form action="#">
+    <p>E-mail: <input type="email" name="login" placeholder="Введите e-mail"></p>
+    <p>Пароль: <input type="password" name="password" placeholder="Введите пароль"></p>
+    <div>Пол: <input type="radio" name="pol"> Мужчина <input type="radio" name="pol"> Женщина</div>
+    <p>Год рождения: <input type="number" min="1900" max="2023">-й</p>
+    <p>Я знаю: 
+        <div>
+            <p><input type="checkbox" name="language" checked disabled> Русский</p>
+            <p><input type="checkbox" name="language"> Испанский</p>
+            <p><input type="checkbox" name="language"> Немецкий</p>
+            <p><input type="checkbox" name="language"> Английский</p>
+            <p><input type="checkbox" name="language"> Китайский</p>
+        </div>
+    </p>
+    <p><textarea cols="50" rows="6"> Напишите о себе</textarea></p>
+    <p><input type="button" value="Готово"> <input type="button" value="Очистить"></p>
+</form>
+</body>
+</html>
