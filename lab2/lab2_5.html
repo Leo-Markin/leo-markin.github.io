@@ -1,27 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 <meta charset="utf-8">
 <title>Форма</title>
+<style>
+    table {
+        width: 400px;
+        border: 1px solid white;
+        float: left;
+    }
+    </style>
 </head>
 <body>
 <h1>Форма регистрации пользователя</h1>
 <form action="#">
-    <p>E-mail: <input type="email" name="login" placeholder="Введите e-mail"></p>
-    <p>Пароль: <input type="password" name="password" placeholder="Введите пароль"></p>
-    <div>Пол: <input type="radio" name="pol"> Мужчина <input type="radio" name="pol"> Женщина</div>
-    <p>Год рождения: <input type="number" min="1900" max="2023">-й</p>
-    <p>Я знаю: 
-        <div>
-            <p><input type="checkbox" name="language" checked disabled> Русский</p>
-            <p><input type="checkbox" name="language"> Испанский</p>
-            <p><input type="checkbox" name="language"> Немецкий</p>
-            <p><input type="checkbox" name="language"> Английский</p>
-            <p><input type="checkbox" name="language"> Китайский</p>
-        </div>
-    </p>
-    <p><textarea cols="50" rows="6" placeholder="Напишите о себе"></textarea></p>
-    <p><input type="button" value="Готово"> <input type="button" value="Очистить"></p>
+    <table>
+        <tr>
+            <td>E-mail:</td>
+            <td><input type="email" name="login" placeholder="Введите e-mail"></td>
+        </tr>
+        <tr>
+            <td>Пароль:</td>
+            <td><input type="password" name="password" placeholder="Введите пароль"></td>
+        </tr>
+        <tr>
+            <td>Пол:</td>
+            <td>
+                <input type="radio" name="pol" id="male">
+                    <label for="male">Мужчина</label>    
+                <input type="radio" name="pol" id="female">
+                    <label for="female">Женщина</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Год рождения:</td>
+            <td><input type="number" min="1900" max="2023">-й</td>
+        </tr>
+        <tr>
+            <td rowspan="5">Я знаю:</td>
+            <td>
+                <input type="checkbox" name="Russian" id="Russian"checked disabled>
+                    <label for="Russian">Русский</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="Spanish" id="Spanish">
+                    <label for="Spanish">Испанский</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="language" id="Deutsche">
+                    <label for="Deutsche">Немецкий</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="language" id="English">
+                    <label for="English">Английский</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="language" id="Chinese">
+                    <label for="Chinese">Китайский</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><textarea cols="50" rows="6" placeholder="Напишите о себе"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="Готово"> <input type="button" value="Очистить"></td>
+        </tr>
+    </table>
 </form>
 </body>
 </html>
