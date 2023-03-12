@@ -17,11 +17,11 @@
     <table>
         <tr>
             <td>E-mail:</td>
-            <td><input type="email" name="login" placeholder="Введите e-mail"></td>
+            <td><input type="email" name="login" placeholder="Введите e-mail" required></td>
         </tr>
         <tr>
             <td>Пароль:</td>
-            <td><input type="password" name="password" placeholder="Введите пароль"></td>
+            <td><input type="password" name="password" placeholder="Введите пароль" required></td>
         </tr>
         <tr>
             <td>Пол:</td>
@@ -39,7 +39,7 @@
         <tr>
             <td rowspan="5">Я знаю:</td>
             <td>
-                <input type="checkbox" name="Russian" id="Russian"checked disabled>
+                <input type="checkbox" name="Russian" id="Russian" checked disabled>
                     <label for="Russian">Русский</label>
             </td>
         </tr>
@@ -71,7 +71,7 @@
             <td colspan="2"><textarea cols="50" rows="6" placeholder="Напишите о себе"></textarea></td>
         </tr>
         <tr>
-            <td colspan="2"><input type="button" value="Готово"> <input type="button" value="Очистить"></td>
+            <td colspan="2"><input type="submit" value="Готово"> <input type="reset" value="Очистить"></td>
         </tr>
     </table>
 </form>
