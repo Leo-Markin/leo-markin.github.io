@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Оформление вертикального меню</title>
+	<style>
+		html {
+			background: #f0f0f0;
+		}
+
+		.menu {
+			width: 200px;
+			background: #fff;
+		}
+
+		.menu li a {
+			color: #336699;
+		}
+
+		.menu ul {
+			list-style-type: none;
+		}
+
+		.menu li ul {
+            padding-left: 22px;
+            margin-top: 2px;    
+		}
+		
+		.bg-minus::before {
+			position: absolute;
+			content: '';
+			width: 16px;
+			height: 16px;
+			background: url('pictures/css_sprites.png') -10px -10px no-repeat;
+			margin-left: -20px;
+			margin-top: 2px;
+		}
+
+		.bg-plus {
+			width: 16px;
+			height: 16px;
+			background: url('pictures/css_sprites.png') -46px -10px;
+		}
+
+		.bg-point::before {
+			position: absolute;
+			content: '';
+			width: 16px;
+			height: 16px;
+			margin-left: -20px;
+			margin-top: 2px;
+			background: url('pictures/css_sprites.png') -10px -46px;
+		}
+	</style>
+</head>
+
+<body>
+	<nav class="menu">
+		<ul>
+			<li class="bg-minus"><a href="#">Фильмы</a>
+				<ul>
+					<li class="bg-point"><a href="#">Экшн</a></li>
+					<li class="bg-point"><a href="#">Мелодрамы</a></li>
+					<li class="bg-point"><a href="#">Сериалы</a></li>
+					<li class="bg-point"><a href="#">Семейные</a></li>
+				</ul>
+			</li>
+			<li class="bg-minus"><a href="#">Музыка</a>
+				<ul>
+					<li class="bg-point"><a href="#">Классика</a></li>
+					<li class="bg-point"><a href="#">Джаз</a></li>
+					<li class="bg-point"><a href="#">Рок</a></li>
+					<li class="bg-point"><a href="#">Грандж</a></li>
+				</ul>
+			</li>
+			<li class="bg-minus"><a href="#">Софт</a>
+				<ul>
+					<li class="bg-point"><a href="#">Графика</a></li>
+					<li class="bg-point"><a href="#">3D-моделирование</a></li>
+					<li class="bg-point"><a href="#">Машинопись</a></li>
+					<li class="bg-point"><a href="#">Переводчики</a></li>
+				</ul>
+			</li>
+			<li class="bg-minus"><a href="#">Игры</a>
+				<ul>
+					<li class="bg-point"><a href="#">РПГ</a></li>
+					<li class="bg-point"><a href="#">Шутеры</a></li>
+					<li class="bg-point"><a href="#">Пасьянсы</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</body>
+
+</html>
