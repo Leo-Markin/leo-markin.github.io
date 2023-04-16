@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Главная страница</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <style>
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        li {
+            list-style-image: url(pic/plus.png);
+        }
+
+        li a {
+            color: #336699;
+        }
+
+        #header {
+            height: 100px;
+            background-color: #ccddee;
+            margin-bottom: 10px;
+        }
+
+        #left {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: #e0edcb;
+            margin-right: 10px;
+        }
+
+        #right {
+            float: right;
+            width: 200px;
+            height: 200px;
+            background-color: #e1e3f4;
+            margin-left: 10px;
+        }
+
+        #center {
+            margin: 0 200px;
+        }
+
+        #footer {
+            height: 100px;
+            background-color: #ddccee;
+            margin-top: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        #end {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header"></div>
+        <div id="outer">
+            <div id="inner">
+                <div id="left">
+                    <ul>
+                        <li><a href="#">Камень</a></li>
+                        <li><a href="#">Ножницы</a></li>
+                        <li><a href="#">Бумага</a></li>
+                    </ul>
+                </div>
+                <div id="right">right</div>
+                <div id="center">center center center center center center center center center center center center
+                    center center center center center center center center center center center center center center
+                    center center center center center center center center center center center center center center
+                    center center center center center center center center center center center center center center
+                    center center center center center center center center center center center center center center
+                    center center center center center center center center center center center center center center
+                </div>
+                <div id="end"></div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+
+</html>
