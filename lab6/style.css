@@ -1,0 +1,19 @@
+body {
+    color: white;
+    background-color: black;
+}
+
+p {
+    text-align: right;
+}
+
+h1,
+h2 {
+    text-align: right;
+    font-family: Arial, sans-serif;
+    color: red;
+}
+
+em {
+    color: green;
+}
