@@ -3,8 +3,9 @@
 let num = prompt("Input num:");
 let mess = "На ветке сидит " + num + " ";
 let digit = num % 10;
+let dec = num % 100;
 
-if (num >= 10 && num <= 20) mess += "ворон";
+if (dec >= 10 && dec <= 20) mess += "ворон";
 else switch(digit) {
     case 1: {
         mess += "ворона";
