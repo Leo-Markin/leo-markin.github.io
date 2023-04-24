@@ -1,5 +1,6 @@
 'use strict';
 
+
 let num = prompt("Input num:");
 let mess = "На ветке сидит " + num + " ";
 let digit = num % 10;
