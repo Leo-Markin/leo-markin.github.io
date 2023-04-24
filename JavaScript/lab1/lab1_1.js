@@ -1,7 +1,7 @@
 'use strict';
 
 let age = prompt("Input age:");
-let gender = prompt("Input gender:");
+let gender = prompt("Input gender (male/female):");
 
 if (age <= 17) alert("Вам работать ещё рано — учитесь");
 
