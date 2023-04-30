@@ -1,0 +1,32 @@
+body {
+    color: white;
+    background-color: black;
+}
+
+#lab_html {
+    float: left;
+}
+
+#js_lab {
+    float: right;
+}
+
+a {
+    color: #b16c4a;
+}
+
+a:hover {
+    color: aqua;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    color: gold;
+}
+
+h2 {
+    color: green;
+}
