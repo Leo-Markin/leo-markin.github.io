@@ -35,10 +35,6 @@ hr {
     border-color: white;
 }
 
-#mocha-stats em {
-    color: #b16c4a !important;
-}
-
 em {
-    color: #b16c4a !important;
+    color: aqua !important;
 }
