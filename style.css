@@ -36,5 +36,5 @@ hr {
 }
 
 #mocha-stats em {
-    color: #b16c4a;
+    color: #b16c4a !important;
 }
