@@ -1,8 +1,8 @@
 /**
- * 
- * @param {*} x 
- * @param {*} n 
- * @returns 
+ * pow(x,n) Возведение в степень
+ * @param {*number} x Число возводимое в степень
+ * @param {*number} n Степень
+ * @returns {*number} Число в степент
  */
 function pow(x,n) { // x - число возводимое в степень; n - степень
     let res = 1;
@@ -12,9 +12,9 @@ function pow(x,n) { // x - число возводимое в степень; n 
 }
 
 /**
- * 
- * @param {*} n 
- * @returns 
+ * Сумма ряда n
+ * @param {*number} n Число до которого идёт ряд
+ * @returns {*number} Сумма ряда
  */
 function sumTo(n) { // n - число до которого нужно просуммировать ряд n;
     let sum = 0;
