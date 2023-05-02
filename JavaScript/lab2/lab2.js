@@ -1,3 +1,9 @@
+/**
+ * 
+ * @param {*} x 
+ * @param {*} n 
+ * @returns 
+ */
 function pow(x,n) { // x - число возводимое в степень; n - степень
     let res = 1;
     if (n >= 0) for (let i = 0; i < n; i++) res *= x; // возведение в неотрицательную степень
@@ -5,6 +11,11 @@ function pow(x,n) { // x - число возводимое в степень; n 
     return res;
 }
 
+/**
+ * 
+ * @param {*} n 
+ * @returns 
+ */
 function sumTo(n) { // n - число до которого нужно просуммировать ряд n;
     let sum = 0;
     for (let i = 1; i <= n; i++) sum += i; // суммирование
