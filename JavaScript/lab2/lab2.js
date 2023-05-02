@@ -37,6 +37,7 @@ function compare(x) { // x - сравниваемое число
 }
 
 function sum(...args) { // args - n-ое кол-во аргументов
+    if (!args.length) return 0; //  если массив пустой, то сумма равна 0
     let s = args.reduce(function (currentSum, currentNum) { // складываем все элементы массива в currentSum. Аналог алгоритма accumulate() из C++
         return currentSum + currentNum;
     });
