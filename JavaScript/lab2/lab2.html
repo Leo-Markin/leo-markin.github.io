@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="icon" type="image/png" href="../../images/favicon.png">
+    <script src="lab2.js"></script>
+    <title>Лабораторная 2</title>
+</head>
+
+<body>
+    <hr>
+    <div id="lab2_1">
+        <h2>Номер 1. Функция pow(x,n):</h2>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="in_x_1">Введите x: </label></td>
+                    <td><input type="number" id="in_x_1"></td>
+                </tr>
+                <tr>
+                    <td><label for="in_n_1">Введите n: </label></td>
+                    <td><input type="number" id="in_n_1"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" id="b_2_1" onclick="lab2_1()">Готово</button></td>
+                </tr>
+                <tr>
+                    <td>Вывод функции: </td>
+                    <td id="result_1"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <hr>
+    <div id="lab2_2">
+        <h2>Номер 2. Функция sumTo(n):</h2>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="in_n_2">Введите n: </label></td>
+                    <td><input type="number" id="in_n_2"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" id="b_2_2" onclick="lab2_2()">Готово</button></td>
+                </tr>
+                <tr>
+                    <td>Вывод функции: </td>
+                    <td id="result_2"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <hr>
+    <div id="lab2_3">
+        <h2>Номер 3. Функция factorial(n):</h2>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="in_n_3">Введите n: </label></td>
+                    <td><input type="number" id="in_n_3"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" id="b_2_3" onclick="lab2_3()">Готово</button></td>
+                </tr>
+                <tr>
+                    <td>Вывод функции: </td>
+                    <td id="result_3"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <hr>
+    <div id="lab2_4">
+        <h2>Номер 4. Функция fib(n):</h2>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="in_n_4">Введите n: </label></td>
+                    <td><input type="number" id="in_n_4"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" id="b_2_4" onclick="lab2_4()">Готово</button></td>
+                </tr>
+                <tr>
+                    <td>Вывод функции: </td>
+                    <td id="result_4"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <hr>
+    <div id="lab2_5">
+        <h2>Номер 5. Функция compare(x)(y):</h2>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="in_x_5">Введите x: </label></td>
+                    <td><input type="number" id="in_x_5"></td>
+                </tr>
+                <tr>
+                    <td><label for="in_y_5">Введите y: </label></td>
+                    <td><input type="number" id="in_y_5"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" id="b_2_5" onclick="lab2_5()">Готово</button></td>
+                </tr>
+                <tr>
+                    <td>Вывод функции: </td>
+                    <td id="result_5"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <hr>
+    <div id="lab2_6">
+        <h2>Номер 6. Функция sum(args):</h2>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="in_args_6">Введите аргументы: </label></td>
+                    <td><input type="text" id="in_args_6"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button" id="b_2_6" onclick="lab2_6()">Готово</button></td>
+                </tr>
+                <tr>
+                    <td>Вывод функции: </td>
+                    <td id="result_6"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <hr>
+</body>
+
+<script>
+    function lab2_1() {
+        let x = document.getElementById("in_x_1").value;
+        let n = document.getElementById("in_n_1").value;
+        let resultElement = document.getElementById("result_1");
+        let result = pow(x, n);
+        resultElement.innerHTML = result;
+    }
+    function lab2_2() {
+        let n = document.getElementById("in_n_2").value;
+        let resultElement = document.getElementById("result_2");
+        let result = sumTo(n);
+        resultElement.innerHTML = result;
+    }
+    function lab2_3() {
+        let n = document.getElementById("in_n_3").value;
+        let resultElement = document.getElementById("result_3");
+        let result = factorial(n);
+        resultElement.innerHTML = result;
+    }
+    function lab2_4() {
+        let n = document.getElementById("in_n_4").value;
+        let resultElement = document.getElementById("result_4");
+        let result = fib(n);
+        resultElement.innerHTML = result;
+    }
+    function lab2_5() {
+        let x = parseInt(document.getElementById("in_x_5").value);
+        let y = parseInt(document.getElementById("in_y_5").value);
+        let resultElement = document.getElementById("result_5");
+        let result = compare(x)(y);
+        if (result == null) result = "null";
+        resultElement.innerHTML = result;
+    }
+    function lab2_6() {
+        let args = document.getElementById("in_args_6").value.split(",").map(Number); // создаём массив из аргументов разделённых запятыми и преобразуем их в int
+        let resultElement = document.getElementById("result_6");
+        let result = sum(...args);
+        resultElement.innerHTML = result;
+    }
+  </script>
+
+</html>
