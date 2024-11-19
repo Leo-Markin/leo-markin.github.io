@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sen:wght@400..800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+        .sen-sen {
+        font-family: "Sen", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        }
+        .inter-inter {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        }
+        header {
+            display: flex;
+            background-color: #232536;
+            height: 80px;
+            width: 1440px;
+        }
+        .icon {
+            display: flex;
+            margin-left: 83px;
+            margin-top: 25px;
+            margin-bottom: 26.65px;
+            height: 28.35px;
+            width: 140px;
+        }
+        .navigation {
+            margin-left: 621px;
+            margin-top: 26px;
+            margin-bottom: 25px;
+            width: 305px;
+            height: 29px;
+            display: flex;
+            align-items: center;
+        }
+        .navigation ul {
+            list-style: none;
+            display: flex;
+            gap: 24px;
+            margin: 0px;
+            padding: 0%;
+        }
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+            margin: 0px;
+        }
+        li {
+            white-space: nowrap;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+
+        }
+        .btnheader {
+            font-family: Sen;
+            width: 179px;
+            height: 56px;
+            margin-top: 12px;
+            margin-left: 32px;
+            color: #232536;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        .blogheader {
+            width: 1440px;
+            height: 519px;
+            background-color: #F4F0F8;
+            display: flex;
+        }
+        .blogheadercontent {
+            width: 624px;
+            height: 332px;
+            margin-left: 80px;
+            margin-top: 94px;
+            color: #4c4c4c;
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        .blogheadercontent h1 {
+            text-transform: uppercase;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 3px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #232536;
+            margin: 0;
+        }
+        h2 {
+            font-family: Sen;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 48px;
+            letter-spacing: -2px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #232536;
+        }
+        .blogheadercontent div {
+            margin-top: 132px;
+        }
+        .blogheadercontent span {
+            color: #592EA9;
+        }
+        .blogheadercontent a {
+            background-color: #FFD050;
+            color: #232536;
+            width: 204px;
+            height: 56px;
+            display: flex;
+            text-align: center;
+            font-family: Sen;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            margin-left: 4px;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+            margin-top: 104px;
+        }
+        .blogheader img{
+            margin-right: 80px;
+            margin-top: 80px;
+            margin-bottom: 80px;
+            margin-left: 141px;
+        }
+        .zag {
+            margin-left: 80px;
+            margin-top: 64px;
+            width: 1282px;
+            height: 96px;
+            border-bottom: 1px solid #6D6E76;
+        }
+        h1 {
+            font-family: Sen;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 64px;
+            letter-spacing: -2px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #232536;
+        }
+        .articles {
+            width: 1147px;
+            height: 1846px;
+            margin-top: 64px;
+            margin-left: 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 64px;
+        }
+        .publ {
+            width: 1146px;
+            height: 318px;
+            display: flex;
+        }
+        .publ img {
+            width: 490px;
+            height: 318px;
+        }
+        .publ div {
+            width: 624px;
+            height: 208px;
+            margin-left: 32px;
+            margin-top: 55px;
+        }
+        .publ span {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 3px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #592EA9;
+            text-transform: uppercase;
+        }
+        .publ h2 {
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+        .publ main {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #6D6E76;
+            margin-top: 16px;
+        }
+        .pagination {
+            width: 174px;
+            height: 40px;
+            margin-top: 64px;
+            margin-left: 647px;
+            display: flex;
+            white-space: nowrap;
+            justify-content: left;
+            align-items: left;
+        }
+        .pagination .left {
+            font-family: Sen;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #6D6E76;
+            background: transparent;
+            border: 0;
+            padding: 0;
+        }
+        .pagination .right {
+            font-family: Sen;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: -1px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #232536;
+            margin-left: 17px;
+            background: transparent;
+            border: 0;
+            padding: 0;
+        }
+        .categ {
+            margin: 0;
+            margin-left: 650px;
+            margin-top: 56px;
+        }
+        .categories {
+            width: 1280px;
+            height: 228px;
+            display: flex;
+            margin-left: 80px;
+            margin-top: 56px;
+            gap: 32px;
+        }
+        .categories article {
+            width: 296px;
+            height: 228px;
+            border: 1px solid #6D6E76;
+        }
+        .iconplace {
+            width: 48px;
+            height: 48px;
+            margin-left: 32px;
+            margin-top: 32px;
+            display: flex;
+            align-items: center;
+            background-image: url('icon background.svg');
+            justify-content: center;
+        }
+        h3 {
+            font-family: Sen;
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: -1px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #232536;
+        }
+        .categories h3 {
+            margin-left: 32px;
+            margin-top: 16px;
+        }
+        .body1 {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        .categories .body1 {
+            color: #6D6E76;
+            margin-top: 4px;
+            margin-left: 32px;
+            width: 232px;
+            height: 56px;
+        }
+        .categories .special {
+            background-color: #FFD050;
+            border: 0;
+        }
+        .categories .iconplace {
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="icon" src="Logo.svg" alt="Логотип">
+        <nav class="navigation">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </nav>
+          <button class="btnheader">Subscribe</button>
+    </header>
+    <main>
+        <section class="blogheader">
+            <article class="blogheadercontent">
+                <h1>Featured Post</h1>
+                <div>
+                    By <span>John Doe</span>   l   
+                    <time datetime="2022-05-23">
+                        May 23, 2022
+                    </time> 
+                </div>
+                <a href="#">Read More ></a>
+            </article>
+            <img src="man-in-white-dress-shirt-sitting-on-black-rolling-chair-while-facing-black-computer-set-and-smiling-840996.png" alt="man"> 
+        </section>
+        <div class="zag"><h1>All Posts</h1></div>
+        <section class="articles">
+            <article class="publ">
+                <img src="two-women-in-front-of-dry-erase-board-1181533.png" alt="two women">
+                <div>
+                    <span>Startup</span>
+                    <h2>Design tips for designers that cover everything you need</h2>
+                    <main>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. 
+                    </main>
+                </div>
+            </article>
+            <article class="publ">
+                <img src="photo-of-people-doing-handshakes-3183197.png" alt="photo-of-people-doing-handshakes-3183197.png">
+                <div>
+                    <span>Bussines</span>
+                    <h2>How to build rapport with your web design clients</h2>
+                    <main>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. 
+                    </main>
+                </div>
+            </article>
+            <article class="publ">
+                <img src="photo-of-woman-looking-at-man-3183173.png" alt="photo-of-woman-looking-at-man-3183173.png">
+                <div>
+                    <span>Startup</span>
+                    <h2>Logo design trends to avoid in 2022</h2>
+                    <main>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. 
+                    </main>
+                </div>
+            </article>
+            <article class="publ">
+                <img src="photo-of-people-walking-on-hallway-3182811.png" alt="photo-of-people-walking-on-hallway-3182811.png">
+                <div>
+                    <span>TECHNOLOGY</span>
+                    <h2>8 Figma design systems you can download for free today</h2>
+                    <main>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. 
+                    </main>
+                </div>
+            </article>
+            <article class="publ">
+                <img src="two-women-in-front-of-dry-erase-board-1181533.png" alt="two women">
+                <div>
+                    <span>ECONOMY</span>
+                    <h2>Font sizes in UI design: The complete guide to follow</h2>
+                    <main>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. 
+                    </main>
+                </div>
+            </article>
+        </section>
+        <section class="pagination">
+            <button class="left">< Prev</button><button class="right">Next ></button>
+        </section>
+        <h2 class="categ">All Categories</h2>
+        <section class="categories">
+            <article>
+                <div class="iconplace">
+                    <img src="Icon.svg" alt="Иконка1">
+                </div>
+                <h3>Business</h3>
+                <div class="body1">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </div>
+            </article>
+            <article class="special">
+                <div class="iconplace">
+                    <img src="Iconstartup.svg" alt="Иконка2">
+                </div>
+                <h3>Startup</h3>
+                <div class="body1">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </div>
+            </article>
+            <article>
+                <div class="iconplace">
+                    <img src="iconeconomy.svg" alt="Иконка3">
+                </div>
+                <h3>Economy</h3>
+                <div class="body1">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </div>
+            </article>
+            <article>
+                <div class="iconplace">
+                    <img src="business-and-trade 1.svg" alt="Иконка4">
+                </div>
+                <h3>Technology</h3>
+                <div class="body1">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
