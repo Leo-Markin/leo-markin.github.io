@@ -78,6 +78,8 @@
             text-align: center;
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
+            background-color: #FFFFFF;
+            border: 0;
         }
         .blogheader {
             width: 1440px;
@@ -286,7 +288,7 @@
             margin-top: 32px;
             display: flex;
             align-items: center;
-            background-image: url('https://leo-markin.github.io/frontend/Icon-background.svg');
+            background-image: url('icon-background.svg');
             justify-content: center;
         }
         h3 {
@@ -312,9 +314,9 @@
             text-align: left;
             text-underline-position: from-font;
             text-decoration-skip-ink: none;
+            color: #6D6E76;
         }
         .categories .body1 {
-            color: #6D6E76;
             margin-top: 4px;
             margin-left: 32px;
             width: 232px;
@@ -326,6 +328,43 @@
         }
         .categories .iconplace {
             justify-content: center;
+        }
+        .ourteam {
+            width: 414px;
+            height: 256px;
+            margin-left: 513px;
+            margin-top: 128px;
+            text-align: center;
+            justify-content: center;
+        }
+        .ourteam h2 {
+            text-align: center;
+            margin: 0;
+        }
+        .ourteam .body1 {
+            text-align: center;
+            margin-top: 16px;
+        }
+        .btnref {
+            background-color: #FFD050;
+            color: #232536;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 48px;
+            padding-right: 48px;
+            display: inline-block;
+            font-family: Sen;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .ourteam .btnref {
+            margin-top: 32px;
         }
     </style>
 </head>
@@ -451,6 +490,11 @@
                 </div>
             </article>
         </section>
+        <article class="ourteam">
+            <h2>Join our team to be a part of our story</h2>
+            <div class="body1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</div>
+            <a class="btnref" href="#">Join Now</a>
+        </article>
     </main>
 </body>
 </html>
