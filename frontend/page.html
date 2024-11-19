@@ -161,7 +161,7 @@
             margin-top: 64px;
             width: 1282px;
             height: 96px;
-            border-bottom: 1px solid #6D6E76;
+            border-bottom: 1px solid #d0d0d3;
         }
         h1 {
             font-family: Sen;
@@ -279,7 +279,7 @@
         .categories article {
             width: 296px;
             height: 228px;
-            border: 1px solid #6D6E76;
+            border: 1px solid #d3d4d6;
         }
         .iconplace {
             width: 48px;
@@ -365,6 +365,99 @@
         }
         .ourteam .btnref {
             margin-top: 32px;
+        }
+        footer {
+            width: 1440px;
+            height: 550px;
+            margin-top: 128px;
+            background-color: #232536;
+            display: flex;
+        }
+        footer main {
+            width: 1280px;
+            height: 445px;
+            margin-top: 59px;
+            margin-left: 80px;
+        }
+        .iconfooter {
+            width: 140px;
+            height: 28.35px;
+        }
+        footer .navigation {
+            margin: 0;
+            margin-top: 0px;
+            margin-left: 703px;
+            padding: 0;
+        }
+        footer .upper {
+            display: flex;
+        }
+        .sub {
+            width: 1280px;
+            height: 256px;
+            background-color: #2e3040;
+            margin-top: 54.65px;
+            display: flex;
+            border: 1px solid #2e3040;
+            
+        }
+        .sub h2 {
+            width: 562px;
+            height: 96px;
+            margin-left: 64px;
+            margin-top: 80px;
+            color: #FFFFFF;
+        }
+        input {
+            background: transparent;
+            width: 323px;
+            height: 54px;
+            margin-top: 84px;
+            margin-left: 64px;
+            border: 1px solid #4C4C4C;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+        }
+        input::placeholder {
+            padding-left: 24.92px;
+        }
+        footer button {
+            padding: 0;
+            width: 179px;
+            height: 56px;
+            border: 0;
+            background-color: #FFD050;
+            color: #232536;
+            font-family: Sen;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            text-align: center;
+            margin-top: 84px;
+            margin-left: 24px;
+        }
+        footer .lower {
+            display: flex;
+        }
+        footer .body1 {
+            font-style: normal;
+            margin-top: 48px;
+        }
+        footer ul {
+            list-style: none;
+            display: flex;
+            gap: 26.67px;
+            margin-left: 775px;
+            margin-top: 60px;
+            padding: 0%;
         }
     </style>
 </head>
@@ -496,5 +589,38 @@
             <a class="btnref" href="#">Join Now</a>
         </article>
     </main>
+    <footer>
+        <main>
+            <section class="upper">
+                <img class="iconfooter" src="Logo.svg" alt="Логотип">
+                <nav class="navigation">
+                    <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Privacy Police</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="sub">
+                <h2>Subscribe to our news letter to get latest updates and news</h2>
+                <input type="email" placeholder="Enter Your Email">
+                <button>Subscribe</button>
+            </section>
+            <section class="lower">
+                <address class="body1">
+                    Finstreet 118 2561 Fintown<br>
+                    Hello@finsweet.com  020 7993 2905
+                </address>
+                <ul class="social-icons-1">
+                    <li><a href="#"><img src="Facebook/Vector.svg"></a></li>
+                    <li><a href="#"><img src="Twitter/Vector.svg"></a></li>
+                    <li><a href="#"><img src="Instagram/Group.svg"></a></li>
+                    <li><a href="#"><img src="LinkedIn/Group.svg"></a></li>
+                </ul>
+            </section>
+        </main>
+    </footer>
 </body>
 </html>
