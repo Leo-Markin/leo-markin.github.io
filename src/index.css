@@ -1,1 +1,40 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
+
+:root{
+  font-family:Inter,Arial,sans-serif;
+  color:#d8d9cb;
+  background:#0e110d;
+  color-scheme:dark;
+  font-synthesis:none;
+  text-rendering:optimizeLegibility;
+  --navy:#0b0e0b;
+  --navy2:#131811;
+  --steel:#222a1d;
+  --amber:#c89b3c;
+  --amber2:#e0b454;
+  --blue:#687b5a;
+  --ink:#d8d9cb;
+  --muted:#858a79;
+  --line:#343b2d;
+  --paper:#171b15;
+  --red:#b85448;
+  --green:#6f8a54;
+  --panel:#171b15;
+  --panel2:#1d221a;
+  --field:#11140f;
+  --terminal:#aeb895;
+  --border:#343b2d;
+}
+*{box-sizing:border-box}
+html{background:#0e110d}
+body{margin:0;min-width:320px;min-height:100vh;background:#0e110d;color:var(--ink)}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1000;opacity:.035;background-image:repeating-linear-gradient(0deg,#fff 0,#fff 1px,transparent 1px,transparent 3px)}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+input,select,textarea{color-scheme:dark}
+h1,h2,h3,p{margin-top:0}
+h1,h2,h3{font-family:'Barlow Condensed',Inter,sans-serif;color:#e3e2d5;text-transform:uppercase;letter-spacing:.035em}
+a{color:#b9c591}
+code,.secure,.eyebrow,.breadcrumbs,.badge,th{font-family:'IBM Plex Mono',monospace}
+::selection{background:#9d7a32;color:#fff}
+#root{min-height:100vh}

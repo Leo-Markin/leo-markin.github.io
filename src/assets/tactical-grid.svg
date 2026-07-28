@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 640">
+  <rect width="1440" height="640" fill="#12170f"/>
+  <g stroke="#7f9066" stroke-width="1" opacity=".13">
+    <path d="M0 80h1440M0 160h1440M0 240h1440M0 320h1440M0 400h1440M0 480h1440M0 560h1440"/>
+    <path d="M80 0v640M160 0v640M240 0v640M320 0v640M400 0v640M480 0v640M560 0v640M640 0v640M720 0v640M800 0v640M880 0v640M960 0v640M1040 0v640M1120 0v640M1200 0v640M1280 0v640M1360 0v640"/>
+  </g>
+  <g fill="none" stroke="#82906c" opacity=".26">
+    <path d="M760 590c42-58 39-119 92-154 45-30 76-12 102-58 24-43 1-76 40-105 50-38 108 4 150-30 47-38 33-103 92-132 46-23 109-9 154-53" stroke-width="3"/>
+    <path d="M720 610c51-62 53-127 108-166 49-34 88-19 118-66 29-46 8-80 47-115 51-46 113-5 159-40 54-42 43-112 105-148 48-28 116-18 163-62"/>
+    <path d="M800 620c34-57 27-108 77-137 40-24 67-4 88-48 20-41-8-70 31-96 46-31 96 15 134-14 40-30 22-91 77-115 44-20 100 1 145-36"/>
+  </g>
+  <g transform="translate(1120 320)" fill="none" stroke="#9aa77b" opacity=".34">
+    <circle r="150"/><circle r="105"/><circle r="60"/><circle r="10"/>
+    <path d="M-180 0h360M0-180v360M-127-127l254 254M127-127l-254 254"/>
+    <path d="M0 0L100-93" stroke="#c99b3f" stroke-width="3"/>
+  </g>
+  <g fill="#a7b38d" font-family="monospace" font-size="12" opacity=".45">
+    <text x="32" y="45">GRID // SF-07</text><text x="1260" y="610">37°46'N 122°25'W</text>
+    <text x="930" y="90">PERIMETER A</text><text x="700" y="590">SUPPLY ROUTE</text>
+  </g>
+</svg>
